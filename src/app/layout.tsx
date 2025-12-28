@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Agua - NewCooltura Informada",
-  description: "Oficinas DGA, derechos de agua, cuencas hidrograficas y calculadora de consumo",
+  title: "Agua Chile - DGA | NewCooltura Informada",
+  description: "Oficinas DGA, derechos de agua, cuencas hidrograficas y calculadora de consumo en Chile",
+  keywords: ["DGA Chile", "derechos de agua", "cuencas hidrograficas", "recursos hidricos", "agua potable"],
+  openGraph: {
+    title: "Agua Chile - NewCooltura Informada",
+    description: "Derechos de agua, cuencas y recursos hidricos",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
